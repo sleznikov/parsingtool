@@ -1,20 +1,24 @@
 # How to Use This PDF Parsing Tool
 
-See requirements.txt for what needs to be imported for code to work.
+API key available upon request or follow steps:
+https://docs.cloud.llamaindex.ai/llamacloud/getting_started/api_key \
+Input api key in .env file:
+```
+LLAMA_CLOUD_API=llx-{{key}}
+```
+Installation
+```
+pip install -r requirements.txt
+```
 
-I did not include my own api key due to security reasons. \
-steps to get api key: https://docs.cloud.llamaindex.ai/llamacloud/getting_started/api_key \
-input api key in .env file next to LLAMA_CLOUD_API=llx-(key)
+Run code input into console: 
+```
+# with provided pdf
+python tool.py 3360.pdf
 
-to run code input into console: 
-
-*pip install -r requirements.txt*
-
-*python tool.py 3360.pdf*
-
-or: 
-
-*python tool.py pdf/path*  (pdf/path is the path to the pdf you want to parse.)
+# with another pdf
+python tool.py /path/to/pdf
+```
 
 This script will parse every pdf document accurately.
 
@@ -26,5 +30,3 @@ Here is a example of the output when putting in 3360.pdf:
 
 ![image](images/Screenshot1.png)
 ![image](images/Screenshot2.png)
-
-
